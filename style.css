@@ -1,4 +1,21 @@
-h1 {
-    color: rgb(255, 0, 191);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.test-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
 }
