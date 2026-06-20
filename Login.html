@@ -1,18 +1,30 @@
 <!DOCTYPE html>
+<html>
 <head>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header><h1>Maschinenelemente-Testat</h1></header>
 
+<body>
 
-<input type="text" placeholder="Benutzername">
+<header>
+    <h1>Maschinenelemente-Testat</h1>
+</header>
 
-<input type="password" placeholder="Passwort">
+<input id="benutzername" type="text" placeholder="Benutzername">
 
-<button onclick="window.location.href='test.html'">
+<input id="passwort" type="password" placeholder="Passwort">
+
+<button onclick="anmelden()">
     Anmelden
 </button>
 
+<p id="loginFehler"></p>
+
+<script src="login.js"></script>
+
+</body>
+</html>
 
 
 

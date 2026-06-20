@@ -1,10 +1,41 @@
+
+<!DOCTYPE html>
+<html>
 <head>
+    <title>Ergebnis</title>
     <link rel="stylesheet" href="style.css">
 </head>
-Ergebnis <br>
 
-3 von 4 richtig <br>
+<body>
 
-<button onclick="window.location.href='login.html'">
-    Test erneut starten
+<header>
+    <h1>Ergebnis</h1>
+</header>
+
+<main>
+
+    <h2 id="ergebnisText"></h2>
+
+    <br>
+<button onclick="window.location.href='start.html'">
+    Test neu starten
 </button>
+   
+<br>
+<br>
+    <button onclick="window.location.href='login.html'">
+        Zurück zur Loginseite
+    </button>
+
+</main>
+
+<script>
+    const punkte = localStorage.getItem("punkte");
+    const gesamt = localStorage.getItem("gesamt");
+
+    document.getElementById("ergebnisText").textContent =
+        punkte + " von " + gesamt + " richtig";
+</script>
+
+</body>
+</html>
