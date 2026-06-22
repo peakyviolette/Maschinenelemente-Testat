@@ -1,28 +1,27 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-Das ist meine erste Website. <br>
-<h1> Über mich </h1> <br>
-Ich bin Leila.<br>
-<br>
-<!DOCTYPE html>
-<html>
-<style>
-body {
-  font-size: 20px;
-}
-</style>
-<body>
+<header>
+    <h1>Maschinenelemente-Testat</h1>
+</header>
 
-<span style='font-size:100px;'>&#128525;</span>
+<input id="benutzername" type="text" placeholder="Benutzername">
 
+<input id="passwort" type="password" placeholder="Passwort">
+
+<button onclick="anmelden()">
+    Anmelden
+</button>
+
+<p id="loginFehler"></p>
+
+<script src="login.js"></script>
 
 </body>
-</html> <br>
-
-<img src="Baum.jpg" width="200px">
+</html>
