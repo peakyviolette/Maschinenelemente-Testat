@@ -1,7 +1,9 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ergebnis</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,13 +18,17 @@
 
     <h2 id="ergebnisText"></h2>
 
+    <!-- Hier erscheint automatisch das passende Bild -->
+    <img id="ergebnisBild" class="ergebnis-bild">
+
     <br>
-<button onclick="window.location.href='start.html'">
-    Test neu starten
-</button>
-   
-<br>
-<br>
+
+    <button onclick="window.location.href='start.html'">
+        Test neu starten
+    </button>
+
+    <br><br>
+
     <button onclick="window.location.href='login.html'">
         Zurück zur Loginseite
     </button>
@@ -30,11 +36,31 @@
 </main>
 
 <script>
+
     const punkte = localStorage.getItem("punkte");
     const gesamt = localStorage.getItem("gesamt");
 
     document.getElementById("ergebnisText").textContent =
         punkte + " von " + gesamt + " richtig";
+
+    const ergebnisBild = document.getElementById("ergebnisBild");
+
+    if (punkte == 0) {
+        ergebnisBild.src = "0von4.jpeg";
+    } 
+    else if (punkte == 1) {
+        ergebnisBild.src = "1von4.jpeg";
+    } 
+    else if (punkte == 2) {
+        ergebnisBild.src = "2von4.jpeg";
+    } 
+    else if (punkte == 3) {
+        ergebnisBild.src = "3von4.jpeg";
+    } 
+    else if (punkte == 4) {
+        ergebnisBild.src = "4von4.jpeg";
+    }
+
 </script>
 
 </body>
