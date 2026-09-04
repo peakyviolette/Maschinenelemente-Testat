@@ -21,7 +21,7 @@ const alleElemente = [
   { name: "Klemmzylinder", bild: "Klemmzylinder.jpg" },
   { name: "Kugelgewindetrieb", bild: "Kugelgewindetrieb.jpeg" },
   { name: "Kugellager axial", bild: "Kugellager axial.jpeg" },
-  { name: "Kugellager Rradial", bild: "Kugellager radial.jpeg" },
+  { name: "Kugellager radial", bild: "Kugellager radial.jpeg" },
   { name: "Nietmutter", bild: "Nietmutter.jpg" },
   { name: "Nutmutter", bild: "Nutmutter.jpg" },
   { name: "Passschraube mit Außensechskantantrieb", bild: "Passschraube mit Außensechskantantrieb.jpg" },
