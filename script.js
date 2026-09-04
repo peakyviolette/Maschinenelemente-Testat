@@ -42,7 +42,7 @@ const alleElemente = [
   { name: "Welle-Naben-Verbindung Keilwelle und Keilnabe", bild: "Welle-Naben-Verbindung Keilwelle und Keilnabe.jpeg" },
   { name: "Werkzeug-Maulschluessel (Aussensechskant)", bild: "Werkzeug-Maulschluessel (Aussensechskant).jpg" },
   { name: "Zugprobe", bild: "Zugprobe.jpg" },
-  { name: "Zylinderrollenlager", bild: "Zylinderrollenlager.jpeg" },
+  { name: "Zylinderrollenlager", bild: "Zylinderrollenlager.jpg" },
   { name: "Zylinderstift", bild: "Zylinderstift.jpg" }
 ];
 
